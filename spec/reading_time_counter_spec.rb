@@ -13,6 +13,9 @@ RSpec.describe "reading_time_counter " do
         result = reading_time_counter("word " * 300)
         expect(result).to eq 2
     end
-    
+    it "1000 words returns 5" do
+        result = reading_time_counter("word " * 1000)
+        expect(result).to eq 5
+    end
 
 end
