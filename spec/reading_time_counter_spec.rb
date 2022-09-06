@@ -9,6 +9,10 @@ RSpec.describe "reading_time_counter " do
         result = reading_time_counter("some words" * 10)
         expect(result).to eq 1
     end
+    it "300 words return 2" do
+        result = reading_time_counter("word " * 300)
+        expect(result).to eq 2
+    end
     
 
 end
