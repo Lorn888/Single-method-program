@@ -1,4 +1,5 @@
 # Single-method-program
+# 1
 
 ## User story
 
@@ -13,3 +14,16 @@ I want to see an estimate of reading time for a text, assuming that I can read 2
 ##### text is a string
 
 
+# 2
+
+## User story
+
+As a user
+So that I can improve my grammar
+I want to verify that a text starts with a capital letter and ends with a suitable sentence-ending punctuation mark.
+
+## Method design
+
+```is_correct = check_grammar(text) ```
+##### text is a string 
+##### is_correct is a boolean
