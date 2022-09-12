@@ -12,4 +12,10 @@ RSpec.describe "check_grammar" do
             expect(result).to eq true
         end
     end
+    context "given a sentence without letter" do
+        it "returns false" do 
+            result = check_grammar("my name is Patryk")
+            expect(result).to eq false
+        end
+    end
 end 
