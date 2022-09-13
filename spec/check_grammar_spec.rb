@@ -22,7 +22,13 @@ RSpec.describe "check_grammar" do
         it "returns false" do 
             result = check_grammar("My name is Patryk")
             expect(result).to eq false
-        end
+        end 
+    end
+    context "given a sentence with neither a full stop or a capital Letter" do
+        it "returns false" do 
+            result = check_grammar("my name is Patryk")
+            expect(result).to eq false
+        end 
     end
     
 end 
