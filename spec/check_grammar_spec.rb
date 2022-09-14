@@ -30,5 +30,11 @@ RSpec.describe "check_grammar" do
             expect(result).to eq false
         end 
     end
+    context "given a sentence with uppercase first" do
+        it "returns true" do 
+            result = check_grammar("MY name is Patryk")
+            expect(result).to eq true
+        end 
+    end
     
 end 
