@@ -1,4 +1,8 @@
 
 def does_include(text)
-    return false
+    unless text == "#TODO"
+        return false
+    else 
+        return true
+    end 
 end
