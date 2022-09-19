@@ -9,4 +9,8 @@ RSpec.describe "does_include" do
         result = does_include("#TODO")
         expect(result).to eq true
     end
+    it "checks if text '#todo' returns false" do
+        result = does_include("#todo")
+        expect(result).to eq false
+    end
 end
