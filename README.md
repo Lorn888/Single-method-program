@@ -27,3 +27,17 @@ I want to verify that a text starts with a capital letter and ends with a suitab
 ```is_correct = check_grammar(text) ```
 ##### text is a string 
 ##### is_correct is a boolean
+
+# 3
+
+## User story
+
+As a user
+So that I can keep track of my tasks
+I want to check if a text includes the string #TODO.
+
+## Method design
+
+```is_correct = check_grammar(text) ```
+##### text is a string 
+##### does_include is a boolean
